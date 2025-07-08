@@ -35,7 +35,9 @@
                 <img src="images/logo.png" alt="">.
             </div>
 
-            <div class="links">
+            <div class="links" id="links">
+                <span class="close_menu" onclick="open_colose_menu()"><i class="fa-solid fa-xmark"></i></span>
+                <a href="" class="logo"><img src="images/logo.png" alt=""></a>
                 <a href="#" class="active">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
@@ -48,6 +50,10 @@
                 <a><i class="fab fa-facebook"></i></a>
                 <a><i class="fab fa-twitter"></i></a>
                 <a><i class="fab fa-instagram"></i></a>
+
+                <span class="icon_menu" onclick="open_colose_menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
 
             </div>
 
@@ -224,14 +230,14 @@
             </div>
 
 
-            <form action="">
+            <form method="post" action="https://api.sheetmonkey.io/form/b4PRsq4PRK1hNLiS6DvQM">
                 <div class="input_form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Mobile Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="text" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Mobile Number" name="number">
+                    <input type="text" placeholder="Subject" name="subject">
 
-                    <textarea name="" rows="10" id="" placeholder="Your Message Here ..."></textarea>
+                    <textarea name="massage" rows="10" id="" placeholder="Your Message Here ..."></textarea>
                 </div>
 
                 <button class="btn">Send Message</button>
